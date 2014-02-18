@@ -61,7 +61,7 @@ then
 	echo "$1 $2" > /etc/nodequery/nq-auth.log
 	
 	# Create user
-	useradd nodequery -r -U -d /etc/nodequery -s /bin/false
+	useradd nodequery -r -d /etc/nodequery -s /bin/false
 	
 	# Modify permissions
 	chown -R nodequery:nodequery /etc/nodequery && chmod -R 700 /etc/nodequery
